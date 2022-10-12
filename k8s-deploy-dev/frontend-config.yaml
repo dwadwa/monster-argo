@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  labels:
+    app: monsterstack
+data:
+  context: PROD
+  imagebackend_domain: imagebackend
+  redis_domain: redis

@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mon-service
+  labels:
+    mon-service: service
+spec:
+  ports:
+    - port: 8080
+  selector:
+    app: monsterstack
+  type: NodePort
